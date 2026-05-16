@@ -1,6 +1,49 @@
 const launchDate = new Date("2026-08-15T09:00:00+05:30").getTime();
 const siteHeader = document.querySelector(".site-header");
 
+function applyBrandFont(root = document.body) {
+  const brandPattern = /(?<![@\w.])reyvo(?![\w.-])/gi;
+  const skipTags = new Set(["SCRIPT", "STYLE", "TEXTAREA", "INPUT", "SELECT", "OPTION"]);
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const parent = node.parentElement;
+      if (!parent || skipTags.has(parent.tagName) || parent.closest(".brand-word")) {
+        return NodeFilter.FILTER_REJECT;
+      }
+
+      brandPattern.lastIndex = 0;
+      return brandPattern.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    },
+  });
+
+  const brandNodes = [];
+  while (walker.nextNode()) {
+    brandNodes.push(walker.currentNode);
+  }
+
+  brandNodes.forEach((node) => {
+    const fragment = document.createDocumentFragment();
+    let lastIndex = 0;
+
+    node.nodeValue.replace(brandPattern, (match, offset) => {
+      fragment.append(document.createTextNode(node.nodeValue.slice(lastIndex, offset)));
+
+      const brandWord = document.createElement("span");
+      brandWord.className = "brand-word";
+      brandWord.textContent = match;
+      fragment.append(brandWord);
+
+      lastIndex = offset + match.length;
+      return match;
+    });
+
+    fragment.append(document.createTextNode(node.nodeValue.slice(lastIndex)));
+    node.replaceWith(fragment);
+  });
+}
+
+applyBrandFont();
+
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
