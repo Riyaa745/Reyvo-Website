@@ -1869,7 +1869,7 @@ textarea {
         min-height: 38px;
         max-width: 100%;
         padding: 0 14px;
-        font-size: 0.58rem;
+        font-size: 0.6rem;
         letter-spacing: 0.16em;
         white-space: normal;
     }
@@ -4069,6 +4069,10 @@ label,
         max-width: 100%;
         font-size: clamp(2.9rem, 13.5vw, 5.7rem);
         line-height: 1.02;
+    }
+
+    .landing-hero .eyebrow {
+        font-size: 0.6rem;
     }
 
     .landing-hero h1 .hero-line {
