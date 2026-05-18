@@ -1804,6 +1804,570 @@ textarea {
     }
 }
 
+/* Final mobile overrides: keep these last so they win */
+@media (max-width: 768px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .landing-page .site-header,
+    .site-header {
+        min-height: 76px;
+        padding: 16px 18px;
+    }
+
+    .landing-page .brand img,
+    .brand img {
+        height: 30px;
+    }
+
+    .landing-page .header-cta,
+    .header-cta {
+        position: fixed;
+        left: 177px !important;
+        right: 16px;
+        bottom: 14px;
+        z-index: 80;
+        min-height: 52px;
+        max-width: none;
+        justify-content: center;
+        padding: 0 18px;
+        background: rgba(14, 14, 14, 0.97);
+        border-color: var(--gold);
+        color: var(--gold);
+        font-size: 0.72rem;
+        text-align: center;
+        box-shadow: 0 14px 36px rgba(0, 0, 0, 0.32), 0 0 18px rgba(184, 150, 46, 0.18);
+    }
+
+    .landing-hero {
+        min-height: auto;
+        padding: 116px 16px 58px;
+    }
+
+    .hero-bg-video {
+        inset: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        opacity: 0.46;
+        filter: blur(5px) saturate(0.78) brightness(0.48) contrast(1.08);
+    }
+
+    .landing-hero .hero-inner,
+    .problem-promise .section-wrap,
+    .section-wrap,
+    .signup-container,
+    .belief-inner,
+    .landing-footer .footer-inner {
+        width: min(100% - 32px, 680px);
+        max-width: 680px;
+    }
+
+    .landing-hero .eyebrow {
+        min-height: 38px;
+        max-width: 100%;
+        padding: 0 14px;
+        font-size: 0.58rem;
+        letter-spacing: 0.16em;
+        white-space: normal;
+    }
+
+    .landing-hero h1 {
+        max-width: 100%;
+        margin-bottom: 24px;
+        font-size: clamp(2.9rem, 13.5vw, 5.7rem);
+        line-height: 1.02;
+    }
+
+    .landing-hero h1 .hero-line {
+        white-space: normal;
+        transform: none;
+    }
+
+    .landing-hero .subline {
+        max-width: 34rem;
+        margin-bottom: 26px;
+        font-size: 0.98rem;
+        line-height: 1.62;
+    }
+
+    .landing-page .button {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 18px;
+        font-size: 0.72rem;
+    }
+
+    .landing-page .countdown {
+        width: min(100%, 420px);
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin: 24px auto 0;
+    }
+
+    .landing-page .countdown i {
+        display: none;
+    }
+
+    .landing-page .countdown-unit {
+        min-width: 0;
+        padding: 12px 6px;
+    }
+
+    .landing-page .countdown strong {
+        font-size: clamp(1.55rem, 8vw, 2.2rem);
+    }
+
+    .landing-page .countdown span {
+        font-size: 0.52rem;
+        letter-spacing: 0.1em;
+    }
+
+    .dark-section,
+    .belief-section,
+    .signup-section {
+        padding: 72px 0;
+    }
+
+    .problem-promise {
+        padding-top: 72px;
+    }
+
+    .problem-promise h2,
+    .problem-promise .promise-gold-panel h2,
+    .belief-section h2,
+    .signup-section h2,
+    .final-cta h2 {
+        max-width: 100%;
+        margin-left: 0;
+        font-size: clamp(2.35rem, 11vw, 3.8rem);
+        line-height: 1.08;
+    }
+
+    .problem-promise .section-intro,
+    .problem-promise .promise-gold-panel .section-intro {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 44px;
+        font-size: 1rem;
+        line-height: 1.68;
+    }
+
+    .problem-grid,
+    .promise-grid,
+    .problem-promise .promise-gold-panel .promise-grid,
+    .signup-container {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .problem-card {
+        padding: 28px 22px;
+    }
+
+    .promise-gold-panel {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-bottom: -72px;
+        padding: 72px 16px 78px;
+    }
+
+    .promise-gold-panel .promise-card {
+        padding: 24px 0 24px 18px;
+    }
+
+    .signup-section::before,
+    .signup-section::after {
+        width: 62vw;
+        opacity: 0.09;
+        filter: blur(10px) saturate(0.8);
+    }
+
+    .signup-section::before {
+        left: -34vw;
+        top: 6%;
+    }
+
+    .signup-section::after {
+        right: -34vw;
+        bottom: 12%;
+    }
+
+    .signup-container {
+        gap: 36px;
+    }
+
+    .landing-page .signup-form {
+        padding: 26px 18px;
+    }
+
+    .belief-section blockquote {
+        margin: 34px 0 36px;
+        padding: 24px 0;
+        font-size: clamp(1.65rem, 8vw, 2.4rem);
+    }
+
+    .final-cta {
+        padding: 72px 16px 82px;
+    }
+
+    .landing-footer {
+        padding: 56px 0 112px;
+    }
+
+    .footer-topline,
+    .footer-social {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-social {
+        gap: 12px;
+    }
+
+    .footer-divider {
+        margin: 28px 0 24px;
+    }
+}
+
+@media (max-width: 430px) {
+    .landing-hero {
+        padding-top: 106px;
+    }
+
+    .landing-hero h1 {
+        font-size: clamp(2.55rem, 15vw, 3.8rem);
+    }
+
+    .landing-page .countdown {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 280px;
+    }
+
+    .problem-promise h2,
+    .problem-promise .promise-gold-panel h2,
+    .belief-section h2,
+    .signup-section h2,
+    .final-cta h2 {
+        font-size: clamp(2.15rem, 12vw, 3.05rem);
+    }
+
+    .hero-particles span:nth-child(n+7) {
+        display: none;
+    }
+}
+
+/* Mobile responsive polish */
+@media (max-width: 768px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .landing-page .site-header,
+    .site-header {
+        min-height: 76px;
+        padding: 16px 18px;
+    }
+
+    .landing-page .brand img,
+    .brand img {
+        height: 30px;
+    }
+
+    .landing-page .header-cta,
+    .header-cta {
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        bottom: 14px;
+        z-index: 80;
+        min-height: 52px;
+        max-width: none;
+        justify-content: center;
+        padding: 0 18px;
+        background: rgba(14, 14, 14, 0.97);
+        border-color: var(--gold);
+        color: var(--gold);
+        font-size: 0.72rem;
+        text-align: center;
+        box-shadow: 0 14px 36px rgba(0, 0, 0, 0.32), 0 0 18px rgba(184, 150, 46, 0.18);
+    }
+
+    .landing-hero {
+        min-height: auto;
+        padding: 116px 16px 58px;
+    }
+
+    .hero-bg-video {
+        inset: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        opacity: 0.46;
+        filter: blur(5px) saturate(0.78) brightness(0.48) contrast(1.08);
+    }
+
+    .landing-hero .hero-inner {
+        width: min(100%, 680px);
+    }
+
+    .landing-hero .eyebrow {
+        min-height: 38px;
+        max-width: 100%;
+        padding: 0 14px;
+        font-size: 0.58rem;
+        letter-spacing: 0.16em;
+        white-space: normal;
+    }
+
+    .landing-hero h1 {
+        max-width: 100%;
+        margin-bottom: 24px;
+        font-size: clamp(2.9rem, 13.5vw, 5.7rem);
+        line-height: 1.02;
+    }
+
+    .landing-hero h1 .hero-line {
+        white-space: normal;
+        transform: none;
+    }
+
+    .landing-hero .subline {
+        max-width: 34rem;
+        margin-bottom: 26px;
+        font-size: 0.98rem;
+        line-height: 1.62;
+    }
+
+    .landing-page .button {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 18px;
+        font-size: 0.72rem;
+    }
+
+    .social-proof {
+        margin-top: 20px;
+        font-size: 0.82rem;
+    }
+
+    .landing-page .countdown {
+        width: min(100%, 420px);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin: 24px auto 0;
+    }
+
+    .landing-page .countdown i {
+        display: none;
+    }
+
+    .landing-page .countdown-unit {
+        min-width: 0;
+        padding: 12px 6px;
+    }
+
+    .landing-page .countdown strong {
+        font-size: clamp(1.55rem, 8vw, 2.2rem);
+    }
+
+    .landing-page .countdown span {
+        font-size: 0.52rem;
+        letter-spacing: 0.1em;
+    }
+
+    .dark-section,
+    .belief-section,
+    .signup-section {
+        padding: 72px 0;
+    }
+
+    .problem-promise {
+        padding-top: 72px;
+    }
+
+    .problem-promise .section-wrap,
+    .section-wrap,
+    .signup-container,
+    .belief-inner {
+        width: min(100% - 32px, 680px);
+    }
+
+    .problem-promise .eyebrow {
+        margin-bottom: 22px;
+        font-size: 0.66rem;
+        letter-spacing: 0.18em;
+    }
+
+    .problem-promise h2,
+    .problem-promise .promise-gold-panel h2,
+    .belief-section h2,
+    .signup-section h2,
+    .final-cta h2 {
+        max-width: 100%;
+        margin-left: 0;
+        font-size: clamp(2.35rem, 11vw, 3.8rem);
+        line-height: 1.08;
+    }
+
+    .problem-promise .section-intro,
+    .problem-promise .promise-gold-panel .section-intro {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 44px;
+        font-size: 1rem;
+        line-height: 1.68;
+    }
+
+    .problem-grid,
+    .promise-grid,
+    .problem-promise .promise-gold-panel .promise-grid {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        gap: 1px;
+    }
+
+    .problem-card {
+        padding: 28px 22px;
+    }
+
+    .promise-gold-panel {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-bottom: -72px;
+        padding: 72px 16px 78px;
+    }
+
+    .promise-gold-panel .promise-card {
+        padding: 24px 0 24px 18px;
+    }
+
+    .promise-pull {
+        margin-top: 42px;
+        font-size: 1.3rem;
+        line-height: 1.38;
+    }
+
+    .signup-section::before,
+    .signup-section::after {
+        width: 62vw;
+        opacity: 0.09;
+        filter: blur(10px) saturate(0.8);
+    }
+
+    .signup-section::before {
+        left: -34vw;
+        top: 6%;
+    }
+
+    .signup-section::after {
+        right: -34vw;
+        bottom: 12%;
+    }
+
+    .signup-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .signup-copy h3 {
+        margin-top: 22px;
+    }
+
+    .perks-list {
+        gap: 10px;
+    }
+
+    .landing-page .signup-form {
+        padding: 26px 18px;
+    }
+
+    .landing-page input,
+    .landing-page select {
+        min-height: 50px;
+        font-size: 0.95rem;
+    }
+
+    .belief-section blockquote {
+        margin: 34px 0 36px;
+        padding: 24px 0;
+        font-size: clamp(1.65rem, 8vw, 2.4rem);
+    }
+
+    .final-cta {
+        padding: 72px 16px 82px;
+    }
+
+    .final-cta p {
+        margin-bottom: 28px;
+        font-size: 1rem;
+        line-height: 1.62;
+    }
+
+    .landing-footer {
+        padding: 56px 0 112px;
+    }
+
+    .landing-footer .footer-inner {
+        width: min(100% - 32px, 680px);
+    }
+
+    .footer-topline,
+    .footer-social {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-social {
+        gap: 12px;
+    }
+
+    .footer-divider {
+        margin: 28px 0 24px;
+    }
+
+    .landing-footer p,
+    .landing-footer a {
+        font-size: 0.86rem;
+        line-height: 1.65;
+    }
+
+    .landing-footer .footer-policy-links {
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 430px) {
+    .landing-hero {
+        padding-top: 106px;
+    }
+
+    .landing-hero h1 {
+        font-size: clamp(2.55rem, 15vw, 3.8rem);
+    }
+
+    .landing-page .countdown {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 280px;
+    }
+
+    .problem-promise h2,
+    .problem-promise .promise-gold-panel h2,
+    .belief-section h2,
+    .signup-section h2,
+    .final-cta h2 {
+        font-size: clamp(2.15rem, 12vw, 3.05rem);
+    }
+
+    .hero-particles span:nth-child(n+7) {
+        display: none;
+    }
+}
+
 /* Landing page refresh */
 .landing-page {
     --obsidian: #0E0E0E;
@@ -1874,6 +2438,19 @@ textarea {
     text-align: center;
 }
 
+.hero-bg-video {
+    position: absolute;
+    inset: -18px;
+    z-index: -4;
+    width: calc(100% + 36px);
+    height: calc(100% + 36px);
+    object-fit: cover;
+    opacity: 0.52;
+    filter: blur(5px) saturate(0.82) brightness(0.56) contrast(1.08);
+    transform: scale(1.03);
+    pointer-events: none;
+}
+
 .landing-hero .hex-bg {
     position: absolute;
     inset: 0;
@@ -1890,8 +2467,8 @@ textarea {
     inset: 0;
     z-index: -1;
     background:
-        radial-gradient(circle at 50% 25%, rgba(184, 150, 46, 0.12), transparent 28%),
-        linear-gradient(180deg, rgba(14, 14, 14, 0.72), var(--obsidian) 82%);
+        radial-gradient(circle at 50% 25%, rgba(184, 150, 46, 0.18), transparent 30%),
+        linear-gradient(180deg, rgba(14, 14, 14, 0.58), rgba(14, 14, 14, 0.82) 54%, var(--obsidian) 100%);
 }
 
 .hero-product-blur {
@@ -3454,5 +4031,181 @@ label,
     .final-cta.reveal.visible * {
         animation: none !important;
         filter: none !important;
+    }
+}
+
+/* Absolute-last mobile layout guard */
+@media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .landing-page .header-cta,
+    .header-cta {
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        bottom: 14px;
+        max-width: none;
+        justify-content: center;
+    }
+
+    .landing-hero {
+        min-height: auto;
+        padding: 116px 16px 58px;
+    }
+
+    .landing-hero .hero-inner,
+    .problem-promise .section-wrap,
+    .signup-container,
+    .belief-inner,
+    .landing-footer .footer-inner {
+        width: min(100% - 32px, 680px);
+        max-width: 680px;
+    }
+
+    .landing-hero h1 {
+        max-width: 100%;
+        font-size: clamp(2.9rem, 13.5vw, 5.7rem);
+        line-height: 1.02;
+    }
+
+    .landing-hero h1 .hero-line {
+        white-space: normal;
+        transform: none;
+    }
+
+    .landing-page .countdown {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        width: min(100%, 420px);
+        gap: 8px;
+    }
+
+    .landing-page .countdown i {
+        display: none;
+    }
+
+    .problem-promise h2,
+    .problem-promise .promise-gold-panel h2,
+    .belief-section h2,
+    .signup-section h2,
+    .final-cta h2 {
+        max-width: 100%;
+        margin-left: 0;
+        font-size: clamp(2.35rem, 11vw, 3.8rem);
+    }
+
+    .problem-grid,
+    .promise-grid,
+    .problem-promise .promise-gold-panel .promise-grid,
+    .signup-container {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .promise-gold-panel {
+        padding: 72px 16px 78px;
+    }
+
+    .footer-topline,
+    .footer-social {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 430px) {
+    .landing-page .countdown {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 280px;
+    }
+
+    .landing-hero h1 {
+        font-size: clamp(2.55rem, 15vw, 3.8rem);
+    }
+}
+
+/* Final mobile spacing fixes requested */
+@media (max-width: 768px) {
+    .landing-page .site-header,
+    .site-header {
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .signup-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .signup-container {
+        width: calc(100% - 48px);
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .signup-copy,
+    .signup-form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .signup-copy p,
+    .signup-copy li {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .signup-copy h3 {
+        font-size: 0.9rem;
+    }
+
+    .landing-page .signup-form {
+        padding: 24px 18px;
+    }
+
+    .landing-footer .footer-policy-links {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0;
+        align-items: center;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .landing-footer .footer-policy-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .landing-footer .footer-policy-links a {
+        flex: 0 0 auto;
+        font-size: 0.72rem;
+    }
+
+    .landing-footer .footer-policy-links a + a::before {
+        padding: 0 6px;
+    }
+}
+
+@media (max-width: 380px) {
+    .signup-container {
+        width: calc(100% - 40px);
+    }
+
+    .landing-footer .footer-policy-links a {
+        font-size: 0.66rem;
+    }
+
+    .landing-footer .footer-policy-links a + a::before {
+        padding: 0 4px;
     }
 }
