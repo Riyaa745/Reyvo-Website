@@ -4,271 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REYVO - Coming Soon</title>
+    <title>REYVO - Founding Circle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="site-header">
+<body class="landing-page">
+    <header class="site-header landing-header">
         <a class="brand" href="#top" aria-label="REYVO home">
             <img src="assets/reyvo-logo.png" alt="REYVO">
         </a>
-        <a class="header-cta" href="#founding-circle">Join the Founding Circle</a>
+        <a class="header-cta nav-count-cta" href="#founding-circle">Join the Founding Circle -&gt;</a>
     </header>
 
     <main id="top">
-        <section class="hero section reveal">
-            <div class="hero-bg" aria-hidden="true">
-                <video class="hero-video" autoplay muted loop playsinline preload="auto">
-                    <source src="assets/video-hero.mp4" type="video/mp4">
-                </video>
-                <div class="hero-overlay"></div>
+        <section class="landing-hero reveal">
+            <div class="hex-bg" aria-hidden="true"></div>
+            <div class="hero-particles" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="hero-copy reveal-left">
-                <p class="eyebrow">Founding Circle - Limited Early Access</p>
-                <h1>Your mind is already committed. Your fuel should keep up.</h1>
-                <p class="hero-text">A clean functional drink being built for founders, professionals, and operators who
-                    are done with the spike-and-crash cycle. No sugar spikes. No synthetic heaviness. Nothing without a
-                    reason to be there.</p>
-                <div class="hero-actions">
-                    <a class="header-cta" href="#founding-circle">Join the Founding Circle</a>
-                    <p><span data-count>340+</span> founders and professionals have already joined.</p>
-                </div>
-                <div class="hero-countdown" id="countdown" aria-label="Launch countdown">
-                    <span><strong id="days">--</strong> days </span>
-                    :
-                    <span><strong id="hours">--</strong> hrs</span>
-                    :
-                    <span><strong id="minutes">--</strong> mins</span>
+            <img class="hero-product-blur" src="assets/both_can_rembg.png" alt="" aria-hidden="true">
+            <div class="hero-inner">
+                <p class="eyebrow">Founding Circle · Limited Early Access</p>
+                <h1>
+                    <span class="hero-line hero-line-one">Your mind is already</span>
+                    <span class="hero-line hero-line-two">committed. Your <em>fuel</em></span>
+                    <span class="hero-line hero-line-three">should keep up.</span>
+                </h1>
+                <p class="subline">A functional drink being built for founders, professionals, and operators who are
+                    done with the spike-and-crash cycle. Launching in India. Not yet - but soon. And we're building it
+                    with the people who already feel the problem.</p>
+                <a class="button hero-cta" href="#founding-circle">Join the Founding Circle</a>
+                <p class="social-proof"><strong data-count>340+</strong> founders and professionals have already
+                    joined.</p>
+                <div class="countdown" aria-label="Launch countdown">
+                    <div class="countdown-unit">
+                        <strong id="days">--</strong>
+                        <span>Days</span>
+                    </div>
+                    <i aria-hidden="true"></i>
+                    <div class="countdown-unit">
+                        <strong id="hours">--</strong>
+                        <span>Hours</span>
+                    </div>
+                    <i aria-hidden="true"></i>
+                    <div class="countdown-unit">
+                        <strong id="minutes">--</strong>
+                        <span>Minutes</span>
+                    </div>
+                    <i aria-hidden="true"></i>
+                    <div class="countdown-unit">
+                        <strong id="seconds">--</strong>
+                        <span>Seconds</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section split reveal">
-            <div>
+        <section class="dark-section problem-promise reveal">
+            <div class="section-wrap">
                 <p class="eyebrow">Why REYVO Exists</p>
-                <h2>You chose a demanding life. What you're running on didn't.</h2>
-            </div>
-            <div class="body-copy">
-                <p>Founders. Professionals. Students. Operators. The people building things in India are running hard
-                    every single day.</p>
-                <p>But somewhere around the third coffee, the 3PM wall, the end of a long week - something starts to
-                    slip. The energy gets inconsistent. The focus dips. And every solution people reach for works
-                    briefly. Then you need another one.</p>
-                <div class="callout">We call this <strong>The Half-Capacity Trap</strong>. Not a lack of drive. A lack
-                    of the right support.</div>
-            </div>
-        </section>
+                <h2>You chose a demanding life. What you're running on didn't plan for it.</h2>
+                <p class="section-intro">Somewhere around the third coffee, the 3PM wall, the end of a long week -
+                    something starts to slip.<br>Not a lack of drive. A lack of the right support.</p>
 
-        <section class="section reveal">
-            <div class="section-heading">
-                <p class="eyebrow">What's Holding You Back</p>
-                <h2>The problem isn't willpower. It's what you're using to sustain it.</h2>
-            </div>
-            <div class="three-grid">
-                <article class="card">
-                    <div class="card-icon" aria-hidden="true">&#9889;</div>
-                    <span>Energy crash</span>
-                    <h3>The spike and crash cycle</h3>
-                    <p>Fast energy that works for an hour and leaves you worse than before. You know the feeling. Most
-                        people just reach for another one.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon" aria-hidden="true">&#9749;</div>
-                    <span>Jitter mode</span>
-                    <h3>The jitter tax</h3>
-                    <p>Overstimulation that makes you feel busy but not steady. Sharp but not clear. On edge instead of
-                        in control.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon" aria-hidden="true">&#128257;</div>
-                    <span>Repeat loop</span>
-                    <h3>The dependency loop</h3>
-                    <p>When the solution becomes part of the problem. When you're not drinking coffee because you want
-                        to - you're drinking it because you have to.</p>
-                </article>
-            </div>
-            <p class="bottom-line">The goal is not to push harder. It is to stop losing ground to the tools you rely on.
-            </p>
-        </section>
+                <div class="problem-grid">
+                    <article class="problem-card">
+                        <div class="problem-card-icon" aria-hidden="true">⚡</div>
+                        <h3>The Spike &amp; Crash</h3>
+                        <p>Fast energy that fades and leaves you worse than before</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-card-icon" aria-hidden="true">🧠</div>
+                        <h3>The Jitter Tax</h3>
+                        <p>Sharp but scattered - busy, not steady</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-card-icon" aria-hidden="true">🔁</div>
+                        <h3>The Dependency Loop</h3>
+                        <p>When you're not drinking coffee because you want to. You're drinking it because you have to.
+                        </p>
+                    </article>
+                </div>
 
-        <section class="section product-section reveal">
-            <div class="product-visual" aria-hidden="true">
-                <span class="product-badge">Coming Soon</span>
-                <img class="product-tease" src="assets/both_can_rembg.png" alt="">
-            </div>
-            <div class="product-copy">
-                <p class="eyebrow">What's Coming</p>
+                <div class="section-rule" aria-hidden="true"></div>
+
                 <h2>Built for the whole day. Not just the first hour.</h2>
-                <p>We're building a functional premix powder designed to support how your body actually functions
-                    through the day - steady, clear, and in control - without unnecessary compromises.</p>
-                <p>You add it to water. You drink it instead of your second or third coffee. Clean ingredients with
-                    defined roles. No added sugar. Available in two formulas - one for the day, one for the evening.</p>
+                <p class="section-intro">REYVO is a functional premix powder. Add it to water. Drink it instead of your
+                    second or third coffee. Clean ingredients with defined roles - no sugar, nothing you can't pronounce.
+                    Available in two formulas: one for the day, one for the evening.</p>
+
+                <div class="promise-grid">
+                    <article class="promise-card">
+                        <h3>Clean by conviction</h3>
+                        <p>Every ingredient has a reason to be there. Nothing added for marketing. Nothing removed for
+                            cost.</p>
+                    </article>
+                    <article class="promise-card">
+                        <h3>Designed for consistency</h3>
+                        <p>Not a spike. A steady, supported day - so the afternoon feels like the morning.</p>
+                    </article>
+                    <article class="promise-card">
+                        <h3>Built for daily use</h3>
+                        <p>Not a supplement. Not a pre-workout. Something you reach for every day, like coffee - but
+                            built to work with you.</p>
+                    </article>
+                </div>
+
+                <p class="promise-pull">We're not launching until it's right. We're building openly - with the people
+                    who need it most.</p>
             </div>
         </section>
 
-        <section class="section reveal">
-            <div class="three-grid pillars">
-                <article>
-                    <div class="pillar-mark">
-                  
-                        <svg class="pillar-icon" viewBox="0 0 120 120" aria-hidden="true">
-                            <path d="M60 10C38 36 26 58 26 77c0 20 15 34 34 34s34-14 34-34C94 58 82 36 60 10Z" />
-                            <path d="M60 95V47" />
-                            <path d="M60 77c-13-5-21-14-23-28" />
-                            <path d="M60 66c12-5 19-13 21-25" />
-                        </svg>
+        <section class="signup-section reveal" id="founding-circle">
+            <div class="signup-container">
+                <div class="signup-copy">
+                    <p class="eyebrow">Join Before We Launch</p>
+                    <h2>We're not selling anything yet. We're building with you.</h2>
+                    <p>The Founding Circle is for founders, professionals, and operators who want in before the market
+                        does.</p>
+                    <h3>What you get:</h3>
+                    <ul class="perks-list">
+                        <li>First access to trial packs before public launch</li>
+                        <li>Honest updates on what we're building and learning</li>
+                        <li>A real voice in how the product takes shape</li>
+                        <li>Founding member recognition</li>
+                    </ul>
+                </div>
+
+                <form class="signup-form" id="signupForm">
+                    <input type="hidden" name="form_type" value="founding_circle">
+                    <div class="form-fields">
+                        <label>
+                            First Name
+                            <input type="text" name="name" placeholder="Your first name" required>
+                        </label>
+                        <label>
+                            Email Address
+                            <input type="email" name="email" placeholder="you@domain.com" required>
+                        </label>
+                        <label>
+                            What best describes you?
+                            <select name="role" required>
+                                <option value="">Select one</option>
+                                <option>Founder</option>
+                                <option>Professional</option>
+                                <option>Student</option>
+                                <option>Operator</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                        <button class="button primary" type="submit">Count me in -&gt;</button>
+                        <p class="form-note">No purchase. No commitment. First access and honest updates from a brand
+                            building in the open.</p>
+                        <p class="joined">Joined by <strong data-count>340+</strong> founders and professionals so far.
+                        </p>
                     </div>
-                    <h3>Clean by Conviction</h3>
-                    <p>Every ingredient has a role. Nothing is added for marketing. We formulate with intention because
-                        what goes into your body every day should be thought about seriously.</p>
-                </article>
-                <article>
-                    <div class="pillar-mark">
-                      
-                        <svg class="pillar-icon" viewBox="0 0 120 120" aria-hidden="true">
-                            <circle cx="60" cy="60" r="43" />
-                            <path d="M27 49c8-7 16-7 24 0s16 7 24 0 16-7 24 0" />
-                            <path d="M27 63c8-7 16-7 24 0s16 7 24 0 16-7 24 0" />
-                            <path d="M27 77c8-7 16-7 24 0s16 7 24 0 16-7 24 0" />
-                        </svg>
+                    <div class="confirm-state" aria-live="polite">
+                        <strong class="confirm-logo-text">REYVO</strong>
+                        <p>You're in. We'll be in touch before anyone else.</p>
                     </div>
-                    <h3>Designed for Consistency</h3>
-                    <p>Not a fast hit that fades. Designed to support a more sustained, steady experience through the
-                        day.</p>
-                </article>
-                <article>
-                    <div class="pillar-mark">
-                   
-                        <svg class="pillar-icon" viewBox="0 0 120 120" aria-hidden="true">
-                            <circle cx="42" cy="30" r="14" />
-                            <path d="M42 8v8M42 44v8M20 30h8M56 30h8M26 14l6 6M58 14l-6 6" />
-                            <path d="M50 63h36v11c0 14-9 24-23 24S40 88 40 74V63h10Z" />
-                            <path d="M86 67h8c8 0 8 17-3 18h-7" />
-                            <path d="M36 103h55" />
-                            <path d="M76 38c-4 8-4 13 0 20M91 38c-4 8-4 13 0 20" />
-                        </svg>
-                    </div>
-                    <h3>Built for Daily Use</h3>
-                    <p>This isn't a pre-workout. It isn't a supplement. It's something you reach for every day - like
-                        coffee, but built to support you rather than cycle you.</p>
-                </article>
-            </div>
-            <p class="bottom-line">We're not launching until it's right. But we're building it openly - with the people
-                who need it most.</p>
-        </section>
-
-        <section class="section split reveal">
-            <div>
-                <p class="eyebrow">Let's Be Clear</p>
-                <h2>We'll tell you exactly what this isn't.</h2>
-            </div>
-            <div class="not-list">
-                <p><strong>Not a hustle culture brand.</strong> We believe in functioning well through the work you've
-                    already chosen.</p>
-                <p><strong>Not an energy drink.</strong> No excessive sugar. No synthetic heaviness. No ingredients
-                    without a clear reason to be there.</p>
-                <p><strong>Not a supplement in disguise.</strong> A beverage. Mixed with water. Ready in 15 seconds.</p>
-                <p><strong>Not built on overclaims.</strong> We'll tell you what's in it, why it's there, and what it's
-                    designed to support. You decide.</p>
+                </form>
             </div>
         </section>
 
-        <section class="section form-section reveal" id="founding-circle">
-            <div class="form-copy">
-                <p class="eyebrow">Join Before We Launch</p>
-                <h2>We're not selling anything yet. We're building with the people who already feel the problem.</h2>
-                <p>The Founding Circle is a small group of founders, professionals, students, and operators who engage
-                    with REYVO before it reaches the market.</p>
-                <ul>
-                    <li>First access to trial packs before public launch</li>
-                    <li>Honest updates on what we're building and learning</li>
-                    <li>A real voice in how the product and community take shape</li>
-                    <li>Founding member recognition</li>
-                </ul>
+        <section class="belief-section reveal">
+            <div class="belief-inner">
+                <p class="eyebrow">What We Believe</p>
+                <h2>Ambition and health don't have to compete.</h2>
+                <p>You shouldn't have to rely on extremes to keep up with a life you've chosen. Performing at your best
+                    and living clean should work together - not against each other.</p>
+                <p>That's not a tagline. That's why REYVO exists.</p>
+                <blockquote>The biggest challenge for ambitious people is not intent - it's consistency.</blockquote>
+                <p>That is what REYVO is being built to support.</p>
+                <a class="belief-cta" href="#founding-circle">Join the Founding Circle -&gt;</a>
             </div>
-            <form class="signup-form" id="signupForm">
-                <input type="hidden" name="form_type" value="founding_circle">
-                <label>
-                    First Name
-                    <input type="text" name="name" placeholder="Your first name" required>
-                </label>
-                <label>
-                    Email Address or Phone Number
-                    <input type="text" name="contact" placeholder="you@example.com or 9876543210" required>
-                </label>
-                <label>
-                    What best describes you?
-                    <select name="role" required>
-                        <option value="">Select one</option>
-                        <option>Founder</option>
-                        <option>Professional</option>
-                        <option>Student</option>
-                        <option>Active</option>
-                        <option>Other</option>
-                    </select>
-                </label>
-                <button class="button primary" type="submit">Count me in</button>
-                <p class="form-note">No purchase. No commitment. First access and honest updates from a brand building
-                    in the open.</p>
-                <p class="joined">Joined by <strong data-count>340+</strong> founders and professionals so far.</p>
-            </form>
         </section>
 
-        <section class="section belief reveal">
-            <div class="belief-bg" aria-hidden="true">
-                <img class="belief-can belief-can-berry" src="assets/product-can.png" alt="">
-                <img class="belief-can belief-can-citrus" src="assets/citrus-can-img.png" alt="">
-                <span class="flavor-dot dot-one"></span>
-                <span class="flavor-dot dot-two"></span>
-                <span class="flavor-dot dot-three"></span>
-                <span class="flavor-dot dot-four"></span>
-                <span class="flavor-dot dot-five"></span>
+        <section class="final-cta reveal">
+            <h2>Before launch. Before pricing. Before it's public.</h2>
+            <p>If you want first access and honest updates from a brand building in the open - this is the moment.</p>
+            <a class="button band-cta" href="#founding-circle">Join the Founding Circle -&gt;</a>
+            <div class="countdown countdown-echo" aria-label="Launch countdown">
+                <div class="countdown-unit">
+                    <strong data-countdown="days">--</strong>
+                    <span>Days</span>
+                </div>
+                <i aria-hidden="true"></i>
+                <div class="countdown-unit">
+                    <strong data-countdown="hours">--</strong>
+                    <span>Hours</span>
+                </div>
+                <i aria-hidden="true"></i>
+                <div class="countdown-unit">
+                    <strong data-countdown="minutes">--</strong>
+                    <span>Minutes</span>
+                </div>
+                <i aria-hidden="true"></i>
+                <div class="countdown-unit">
+                    <strong data-countdown="seconds">--</strong>
+                    <span>Seconds</span>
+                </div>
             </div>
-            <p class="eyebrow">What We Believe</p>
-            <h2>Ambition and health don't have to compete.</h2>
-            <p>You shouldn't have to rely on extremes to keep up with a life you've chosen. Performing at your best and
-                living clean should work together - not against each other.</p>
-            <p>That's not a tagline. That's why REYVO exists.</p>
-            <strong>The biggest challenge for ambitious people is not intent - it's consistency. That is what REYVO is
-                being built to support.</strong>
-        </section>
-
-        <section class="cta-band reveal">
-            <div>
-                <h2>This is the part where things move fastest.</h2>
-                <p>Before launch. Before pricing. Before it is public. If you want first access and honest updates from
-                    a brand building in the open - this is the moment.</p>
-            </div>
-            <a class="button secondary" href="#founding-circle">Join the Founding Circle</a>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer landing-footer">
         <div class="footer-inner">
-            <div>
-                <strong>REYVO</strong>
-                <p>Sharpy Innovations Pvt. Ltd.<br>Coming Soon · 2026</p>
+            <div class="footer-topline">
+                <a class="footer-logo-link" href="index.html#top" aria-label="REYVO home"><strong>REYVO</strong></a>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/reyvo" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.instagram.com/reyvoindia" target="_blank" rel="noopener">Instagram</a>
+                    <a href="mailto:hello@reyvo.in">hello@reyvo.in</a>
+                </div>
             </div>
-            <div>
-                <strong>Follow the journey</strong>
-                <p><a href="https://www.linkedin.com/company/reyvo" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/reyvoindia" target="_blank" rel="noopener">Instagram</a></p>
-            </div>
-            <div>
-                <strong>Legal</strong>
-                <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-and-conditions.html">T&amp;C</a><br><a href="refund-return-policy.html">Return Policy</a></p>
-            </div>
-            <div>
-                <strong>Get in touch</strong>
-                <p><a href="contact-us.html">Contact Us</a><br><a href="mailto:hello@reyvo.in">hello@reyvo.in</a><br><a href="tel:02235216790">022-35216790</a></p>
-            </div>
-            <p class="micro">REYVO is a pre-launch brand. Products are in development and not yet available for
-                purchase. All expressions of interest are non-binding.</p>
+            <div class="footer-divider" aria-hidden="true"></div>
+            <p>REYVO &mdash; Sharpy Innovations Pvt. Ltd. &#183; Coming Soon &#183; 2026</p>
+            <p>REYVO is a pre-launch brand. Products are in development and not yet available for purchase. All
+                expressions of interest are non-binding.</p>
+            <nav class="footer-policy-links" aria-label="Footer links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                <a href="refund-return-policy.html">Return Policy</a>
+                <a href="contact-us.html">Contact us</a>
+            </nav>
         </div>
     </footer>
 
