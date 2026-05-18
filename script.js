@@ -166,7 +166,7 @@ function renderCount(count = memberCount) {
     node.textContent = `${count}+`;
   });
   if (navCountCta && count >= 340) {
-    navCountCta.textContent = `Join ${count}+ founders ->`;
+    navCountCta.textContent = `Join ${count}+ founders ➞`;
   }
 }
 
