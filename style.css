@@ -3714,11 +3714,16 @@ label,
     border-radius: 50%;
 }
 
-.footer-social a:hover,
-.follow-link:hover {
+.footer-social a:hover {
     color: var(--gold);
     border-color: rgba(184, 150, 46, 0.76);
     background: rgba(184, 150, 46, 0.1);
+    transform: translateY(-2px);
+}
+
+.follow-link:hover {
+    color: var(--cream);
+    background: #000000c1;
     transform: translateY(-2px);
 }
 
@@ -3777,11 +3782,11 @@ label,
     min-height: 58px;
     gap: 12px;
     padding: 0 24px;
-    border-radius: 999px;
+    /* border-radius: 999px; */
     text-decoration: none;
-    color: rgba(14, 14, 14, 0.72);
-    border-color: rgba(184, 150, 46, 0.34);
-    background: rgba(255, 255, 255, 0.78);
+    color: var(--gold);
+    border-color: rgba(184, 150, 46, 0.76);
+    background: rgba(184, 150, 46, 0.1);
 }
 
 .follow-link span {
