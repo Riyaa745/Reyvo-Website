@@ -1,4 +1,4 @@
-const launchDate = new Date("2026-08-15T09:00:00+05:30").getTime();
+const launchDate = Date.now() + 60 * 24 * 60 * 60 * 1000;
 const siteHeader = document.querySelector(".site-header");
 const isLandingPage = document.body.classList.contains("landing-page");
 
@@ -69,7 +69,7 @@ function updateCountdown() {
   const hour = 1000 * 60 * 60;
   const minute = 1000 * 60;
 
-  const days = String(Math.floor(distance / day)).padStart(2, "0");
+  const days = String(distance > 0 ? Math.ceil(distance / day) : 0).padStart(2, "0");
   const hours = String(Math.floor((distance % day) / hour)).padStart(2, "0");
   const minutes = String(Math.floor((distance % hour) / minute)).padStart(2, "0");
   const seconds = String(Math.floor((distance % minute) / 1000)).padStart(2, "0");

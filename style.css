@@ -32,7 +32,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-family: "DM Sans", Calibri, "Segoe UI", Arial, sans-serif;
     background:
         linear-gradient(180deg, #FFFFFF 0%, var(--cream) 34%, #EFEFED 100%);
     color: var(--ink);
@@ -1374,7 +1374,26 @@ textarea {
 }
 
 .contact-list p {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 14px;
+    align-items: start;
     margin: 0;
+}
+
+.contact-icon {
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+    color: var(--gold);
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+    border: 1px solid rgba(184, 150, 46, 0.32);
+    border-radius: 50%;
+    background: rgba(184, 150, 46, 0.08);
 }
 
 .contact-list strong {
@@ -1391,6 +1410,7 @@ textarea {
 }
 
 .contact-list span {
+    display: block;
     color: rgba(17, 17, 17, 0.72);
     line-height: 1.65;
 }
@@ -1806,6 +1826,7 @@ textarea {
 
 /* Final mobile overrides: keep these last so they win */
 @media (max-width: 768px) {
+
     html,
     body {
         max-width: 100%;
@@ -2062,6 +2083,7 @@ textarea {
 
 /* Mobile responsive polish */
 @media (max-width: 768px) {
+
     html,
     body {
         max-width: 100%;
@@ -2440,14 +2462,15 @@ textarea {
 
 .hero-bg-video {
     position: absolute;
-    inset: -18px;
+    inset: -8px;
     z-index: -4;
-    width: calc(100% + 36px);
-    height: calc(100% + 36px);
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
     object-fit: cover;
-    opacity: 0.52;
-    filter: blur(5px) saturate(0.82) brightness(0.56) contrast(1.08);
-    transform: scale(1.03);
+    opacity: 0.78;
+    /* filter: blur(1.5px) saturate(1.08) brightness(0.92) contrast(1.04); */
+    filter: blur(3.5px) saturate(1.08) brightness(0.92) contrast(1.04);
+    transform: scale(1.01);
     pointer-events: none;
 }
 
@@ -2467,8 +2490,8 @@ textarea {
     inset: 0;
     z-index: -1;
     background:
-        radial-gradient(circle at 50% 25%, rgba(184, 150, 46, 0.18), transparent 30%),
-        linear-gradient(180deg, rgba(14, 14, 14, 0.58), rgba(14, 14, 14, 0.82) 54%, var(--obsidian) 100%);
+        radial-gradient(circle at 50% 25%, rgba(184, 150, 46, 0.14), transparent 30%),
+        linear-gradient(180deg, rgba(14, 14, 14, 0.36), rgba(14, 14, 14, 0.62) 54%, var(--obsidian) 100%);
 }
 
 .hero-product-blur {
@@ -2808,7 +2831,7 @@ textarea {
     min-height: 50px;
     color: var(--landing-text);
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(184, 150, 46, 0.3);
+    border: 1px solid #ffffff61;
     border-radius: 0;
 }
 
@@ -2891,7 +2914,7 @@ textarea {
     border-bottom: 1px solid var(--landing-border);
     color: rgba(255, 255, 255, 0.92);
     font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-    font-size: clamp(1rem, 3.8vw, 2px);
+    font-size: clamp(1.65rem, 3.8vw, 2.2rem);
     font-style: italic;
     font-weight: 300;
     line-height: 1.35;
@@ -3146,10 +3169,10 @@ label,
 .site-header,
 .legal-header,
 .landing-page .site-header {
-    background: #0E0E0E;
+    background: #0e0e0e00;
     border-bottom: 0;
     box-shadow: none;
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(0px);
 }
 
 .site-header.is-scrolled,
@@ -3671,7 +3694,102 @@ label,
 .footer-social {
     display: flex;
     align-items: center;
-    gap: clamp(24px, 3vw, 42px);
+    gap: 12px;
+}
+
+.footer-social a,
+.follow-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.66);
+    border: 1px solid rgba(184, 150, 46, 0.34);
+    background: rgba(255, 255, 255, 0.03);
+    transition: color 220ms ease, border-color 220ms ease, background 220ms ease, transform 220ms ease;
+}
+
+.footer-social a {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.footer-social a:hover,
+.follow-link:hover {
+    color: var(--gold);
+    border-color: rgba(184, 150, 46, 0.76);
+    background: rgba(184, 150, 46, 0.1);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.9;
+}
+
+.footer-social .social-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-social a:first-child .social-icon path,
+.follow-link:first-child .social-icon path {
+    fill: currentColor;
+    stroke: none;
+}
+
+.follow-section {
+    padding: 76px 24px 0;
+    background: transparent;
+    border-top: 0;
+    text-align: center;
+}
+
+.follow-inner {
+    width: min(980px, 100%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-section h2 {
+    margin: 0 0 30px;
+    color: var(--obsidian);
+    font-size: clamp(2.25rem, 4.6vw, 4rem);
+}
+
+.follow-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.follow-link {
+    min-width: 190px;
+    min-height: 58px;
+    gap: 12px;
+    padding: 0 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: rgba(14, 14, 14, 0.72);
+    border-color: rgba(184, 150, 46, 0.34);
+    background: rgba(255, 255, 255, 0.78);
+}
+
+.follow-link span {
+    color: currentColor;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .footer-divider {
@@ -3682,6 +3800,11 @@ label,
 
 .footer-logo-link {
     display: inline-flex;
+}
+
+.landing-footer .brand-word,
+.footer .brand-word {
+    font-size: 1.4rem;
 }
 
 .landing-footer p {
@@ -4036,6 +4159,7 @@ label,
 
 /* Absolute-last mobile layout guard */
 @media (max-width: 768px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -4046,7 +4170,7 @@ label,
         position: fixed;
         left: 16px;
         right: 16px;
-        bottom: 14px;
+        bottom: 12px;
         max-width: none;
         justify-content: center;
     }
@@ -4133,6 +4257,7 @@ label,
 
 /* Final mobile spacing fixes requested */
 @media (max-width: 768px) {
+
     .landing-page .site-header,
     .site-header {
         align-items: center;
@@ -4195,7 +4320,7 @@ label,
         font-size: 0.72rem;
     }
 
-    .landing-footer .footer-policy-links a + a::before {
+    .landing-footer .footer-policy-links a+a::before {
         padding: 0 6px;
     }
 }
@@ -4209,7 +4334,79 @@ label,
         font-size: 0.66rem;
     }
 
-    .landing-footer .footer-policy-links a + a::before {
+    .landing-footer .footer-policy-links a+a::before {
         padding: 0 4px;
     }
+}
+
+@media (max-width: 768px) {
+    .footer-social {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .follow-section {
+        padding: 56px 16px 0;
+    }
+
+    .follow-links {
+        gap: 12px;
+    }
+
+    .follow-link {
+        min-width: min(100%, 168px);
+    }
+}
+
+@media (max-width: 480px) {
+    .follow-links {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .follow-link {
+        width: 100%;
+    }
+}
+
+body,
+button,
+input,
+select,
+textarea,
+label,
+p,
+li,
+a,
+.legal-content,
+.contact-card,
+.contact-form {
+    font-family: "DM Sans", Calibri, "Segoe UI", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+blockquote,
+.legal-hero h1,
+.legal-content h2,
+.legal-content h3,
+.contact-card h2,
+.landing-page h1,
+.landing-page h2 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.eyebrow,
+.countdown strong,
+.countdown span,
+.countdown i,
+.footer strong,
+.landing-footer strong {
+    font-family: "Space Mono", "Courier New", monospace;
+}
+
+.brand-word,
+.confirm-logo-text {
+    font-family: "Davioza Molegs", "Times New Roman", serif;
 }
