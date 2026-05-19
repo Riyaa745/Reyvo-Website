@@ -1205,7 +1205,7 @@ textarea {
 
 .legal-header {
     position: sticky;
-    background: rgba(248, 248, 246, 0.94);
+    background: rgba(19, 19, 19, 0.94);
     border-bottom: 1px solid var(--line);
     box-shadow: 0 10px 34px rgba(17, 17, 17, 0.08);
     backdrop-filter: blur(18px);
